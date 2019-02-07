@@ -1,8 +1,8 @@
-var createElement = wp.element.createElement,
-    registerBlockType = wp.blocks.registerBlockType,
-    __ = wp.i18n.__;
+var createElement = wp.element.createElement;
+var __ = wp.i18n.__;
 
-registerBlockType( 'jsforwp/callout-block', {
+wp.blocks.registerBlockType( 'jsforwp/callout-block', {
+    
     title: 'Callout Block',
 
     icon: 'megaphone',

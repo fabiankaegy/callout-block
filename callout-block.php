@@ -1,0 +1,31 @@
+<?php
+/**
+ * Plugin Name: Callout Block
+ * Description: Creates a Gutenberg Block to add a callout component to the page.
+ * Author: fabiankaegy
+ * Author URI: https://javascriptforwp.com
+ * Text Domain: jsforwp-callout-block
+ * Version: 1.0.0
+ */
+
+function register_block_assets() {
+
+	$block_path = '/callout-block.js';
+	wp_enqueue_script(
+		'jsforwp-callout-block',
+		plugins_url( $block_path , __FILE__ ),
+		[ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor' ],
+		filemtime( plugin_dir_path( $block_path , __FILE__ ) )
+	);
+
+	$style_path = '/callout-block.css';
+	wp_enqueue_style(
+		'jsforwp-callout-block-styles',
+		plugins_url( $style_path , __FILE__ ),
+		[],
+		filemtime( plugin_dir_path( $style_path , __FILE__ ) )
+    );
+    
+}
+
+add_action('enqueue_block_assets', 'register_block_assets');

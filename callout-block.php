@@ -11,7 +11,7 @@
 function register_block_assets() {
 
 	$block_path = '/callout-block.js';
-	wp_enqueue_script(
+	wp_register_script(
 		'jsforwp-callout-block',
 		plugins_url( $block_path , __FILE__ ),
 		[ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor' ],
@@ -19,13 +19,18 @@ function register_block_assets() {
 	);
 
 	$style_path = '/callout-block.css';
-	wp_enqueue_style(
+	wp_register_style(
 		'jsforwp-callout-block-styles',
 		plugins_url( $style_path , __FILE__ ),
 		[],
 		filemtime( plugin_dir_path( $style_path , __FILE__ ) )
     );
     
+    register_block_type( 'jsforwp/callout-block', array(
+		'editor_script' => 'jsforwp-callout-block',
+		'style' => 'jsforwp-callout-block-styles',
+	) );
+    
 }
 
-add_action('enqueue_block_assets', 'register_block_assets');
+add_action('init', 'register_block_assets');

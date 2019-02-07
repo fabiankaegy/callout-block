@@ -12,7 +12,7 @@ registerBlockType( 'jsforwp/callout-block', {
     attributes: {
 		content: {
 			source: 'html',
-			selector: 'h2',
+			selector: 'h5',
 		},
 	},
 

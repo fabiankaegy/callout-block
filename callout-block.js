@@ -30,17 +30,17 @@ wp.blocks.registerBlockType( 'jsforwp/callout-block', {
                 null,
                 wp.element.createElement(
                     wp.editor.PanelColorSettings, {
-                        title: wp.i18n.__("Color Settings", "jsforwp-callout-block"),
+                        title: wp.i18n.__("Color Settings", "jsforwp"),
                         colorSettings: [
                             {
-                                label: wp.i18n.__("Background Color", "jsforwp-callout-block"),
+                                label: wp.i18n.__("Background Color", "jsforwp"),
                                 value: props.attributes.backgroundColor,
                                 onChange: function( newBackgroundColor ) {
                                     props.setAttributes({ backgroundColor: newBackgroundColor });
                                 }
                             },
                             {
-                                label: wp.i18n.__("Text Color", "jsforwp-callout-block"),
+                                label: wp.i18n.__("Text Color", "jsforwp"),
                                 value: props.attributes.textColor,
                                 onChange: function( newColor ) {
                                     props.setAttributes({ textColor: newColor });

@@ -4,7 +4,7 @@
  * Description: Creates a Gutenberg Block to add a callout component to the page.
  * Author: zgordon, fabiankaegy
  * Author URI: https://javascriptforwp.com
- * Text Domain: jsforwp-callout-block
+ * Text Domain: jsforwp
  * Version: 1.0.0
  */
 

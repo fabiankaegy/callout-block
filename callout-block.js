@@ -1,6 +1,3 @@
-var createElement = wp.element.createElement;
-var __ = wp.i18n.__;
-
 wp.blocks.registerBlockType( 'jsforwp/callout-block', {
     
     title: 'Callout Block',
@@ -25,37 +22,37 @@ wp.blocks.registerBlockType( 'jsforwp/callout-block', {
 	},
 
 	edit: function( props ) {
-		return createElement( 
+		return wp.element.createElement( 
             wp.element.Fragment, 
             null, 
-            createElement(
+            wp.element.createElement(
                 wp.editor.InspectorControls, 
                 null,
-                createElement(
+                wp.element.createElement(
                     wp.editor.PanelColorSettings, {
-                        title: __("Color Settings", "jsforwp-callout-block"),
+                        title: wp.i18n.__("Color Settings", "jsforwp-callout-block"),
                         colorSettings: [
                             {
+                                label: wp.i18n.__("Background Color", "jsforwp-callout-block"),
                                 value: props.attributes.backgroundColor,
-                                onChange: function( value ) {
-                                    props.setAttributes({ backgroundColor: value });
-                                },
-                                label: __("Background Color", "jsforwp-callout-block")
+                                onChange: function( newBackgroundColor ) {
+                                    props.setAttributes({ backgroundColor: newBackgroundColor });
+                                }
                             },
                             {
+                                label: wp.i18n.__("Text Color", "jsforwp-callout-block"),
                                 value: props.attributes.textColor,
-                                onChange: function( value ) {
-                                    props.setAttributes({ textColor: value });
-                                },
-                                label: __("Text Color", "jsforwp-callout-block")
+                                onChange: function( newColor ) {
+                                    props.setAttributes({ textColor: newColor });
+                                }
                             }
                         ]
                     }
                 )
             ),
-            createElement( 
+            wp.element.createElement( 
                 wp.editor.RichText, {
-                    tagName: 'h5',
+                    tagName: 'h2',
                     className: props.className,
                     value: props.attributes.content,
                     style: {
@@ -71,8 +68,8 @@ wp.blocks.registerBlockType( 'jsforwp/callout-block', {
 	},
 
 	save: function( props ) {
-		return createElement( wp.editor.RichText.Content, {
-            tagName: 'h5', 
+		return wp.element.createElement( wp.editor.RichText.Content, {
+            tagName: 'h2', 
             value: props.attributes.content,
             style: {
                 backgroundColor: props.attributes.backgroundColor,

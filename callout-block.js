@@ -59,8 +59,8 @@ wp.blocks.registerBlockType( 'jsforwp/callout-block', {
                         backgroundColor: props.attributes.backgroundColor,
                         color: props.attributes.textColor
                     },
-                    onChange: function( content ) {
-                        props.setAttributes( { content: content } );
+                    onChange: function( newContent ) {
+                        props.setAttributes( { content: newContent } );
                     }
                 } 
             ) 

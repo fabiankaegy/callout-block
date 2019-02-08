@@ -8,6 +8,8 @@
  * Version: 1.0.0
  */
 
+add_action('init', 'jsforwp_register_block_assets');
+
 function jsforwp_register_block_assets() {
 
 	$block_path = '/callout-block.js';
@@ -32,5 +34,3 @@ function jsforwp_register_block_assets() {
 	) );
     
 }
-
-add_action('init', 'jsforwp_register_block_assets');

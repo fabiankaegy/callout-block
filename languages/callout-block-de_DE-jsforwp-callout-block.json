@@ -1,0 +1,21 @@
+{
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "plural_forms": "nplurals=2; plural=(n != 1);",
+        "lang": "de_DE"
+      },
+      "Callout Block": ["Hervorhebung Block"],
+      "Creates a Gutenberg Block to add a callout component to the page.": [
+        "Erstellt einen Gutenberg-Block, um der Seite eine Hervorhebungs-Komponente hinzuzufügen."
+      ],
+      "zgordon, fabiankaegy": [""],
+      "https://javascriptforwp.com": [""],
+      "Color Settings": ["Farbeinstellungen"],
+      "Background Color": ["Hintergrundfarbe"],
+      "Text Color": ["Textfarbe"]
+    }
+  }
+}

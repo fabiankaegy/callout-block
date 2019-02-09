@@ -9,7 +9,7 @@ wp.blocks.registerBlockType( 'jsforwp/callout-block', {
     attributes: {
 		content: {
 			source: 'html',
-			selector: 'h5',
+			selector: 'h2',
         },
         backgroundColor: {
             type: 'string',

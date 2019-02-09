@@ -27,7 +27,9 @@ function jsforwp_register_block_assets() {
 		[],
 		filemtime( plugin_dir_path( $style_path , __FILE__ ) )
     );
-    
+	
+	wp_set_script_translations( 'jsforwp-callout-block', 'jsforwp', plugin_dir_path( __FILE__ ) . 'languages' );
+
     register_block_type( 'jsforwp/callout-block', array(
 		'editor_script' => 'jsforwp-callout-block',
 		'style' => 'jsforwp-callout-block-styles',

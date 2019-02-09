@@ -1,0 +1,43 @@
+# Copyright (C) 2019 zgordon, fabiankaegy
+# This file is distributed under the same license as the Callout Block plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Callout Block 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/callout-block\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-02-09T15:01:02+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.1.0\n"
+"X-Domain: jsforwp\n"
+
+#. Plugin Name of the plugin
+msgid "Callout Block"
+msgstr ""
+
+#. Description of the plugin
+msgid "Creates a Gutenberg Block to add a callout component to the page."
+msgstr ""
+
+#. Author of the plugin
+msgid "zgordon, fabiankaegy"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://javascriptforwp.com"
+msgstr ""
+
+#: callout-block.js:33
+msgid "Color Settings"
+msgstr ""
+
+#: callout-block.js:36
+msgid "Background Color"
+msgstr ""
+
+#: callout-block.js:43
+msgid "Text Color"
+msgstr ""

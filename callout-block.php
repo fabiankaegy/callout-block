@@ -9,7 +9,7 @@
  * Version: 1.0.0
  */
 
-add_action( 'init', 'jsforwp_load_textdomain' );
+add_action( 'plugins_loaded', 'jsforwp_load_textdomain' );
 
 function jsforwp_load_textdomain() {
 	load_plugin_textdomain('jsforwp', false, basename( dirname( __FILE__ ) ) . '/languages');

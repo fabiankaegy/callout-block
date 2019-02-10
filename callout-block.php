@@ -5,12 +5,15 @@
  * Author: zgordon, fabiankaegy
  * Author URI: https://javascriptforwp.com
  * Text Domain: jsforwp
+ * Domain Path: /languages
  * Version: 1.0.0
  */
 
 add_action('init', 'jsforwp_register_block_assets');
 
 function jsforwp_register_block_assets() {
+
+	load_plugin_textdomain('jsforwp', null, plugin_dir_path( __FILE__ ). '/languages');
 
 	$block_path = '/callout-block.js';
 	wp_register_script(

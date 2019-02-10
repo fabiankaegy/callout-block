@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2019-02-09T15:01:02+00:00\n"
-"PO-Revision-Date: 2019-02-09 16:03+0100\n"
+"PO-Revision-Date: 2019-02-10 15:20+0100\n"
 "X-Generator: Poedit 2.0.5\n"
 "X-Domain: jsforwp\n"
 "Last-Translator: \n"
@@ -26,11 +26,11 @@ msgstr "Erstellt einen Gutenberg-Block, um der Seite eine Hervorhebungs-Komponen
 
 #. Author of the plugin
 msgid "zgordon, fabiankaegy"
-msgstr ""
+msgstr "zgordon, fabiankaegy"
 
 #. Author URI of the plugin
 msgid "https://javascriptforwp.com"
-msgstr ""
+msgstr "https://javascriptforwp.com"
 
 #: callout-block.js:33
 msgid "Color Settings"

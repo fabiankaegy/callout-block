@@ -1,6 +1,6 @@
 wp.blocks.registerBlockType( 'jsforwp/callout-block', {
     
-    title: wp.i18n.__('Callout Block', 'jsforwp'),
+    title: wp.i18n.__("Callout", "jsforwp"),
 
     icon: 'megaphone',
 

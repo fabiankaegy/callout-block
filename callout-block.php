@@ -9,11 +9,15 @@
  * Version: 1.0.0
  */
 
+add_action( 'init', 'jsforwp_load_textdomain' );
+
+function jsforwp_load_textdomain() {
+	load_plugin_textdomain('jsforwp', false, basename( dirname( __FILE__ ) ) . '/languages');
+}
+
 add_action('init', 'jsforwp_register_block_assets');
 
 function jsforwp_register_block_assets() {
-
-	load_plugin_textdomain('jsforwp', null, plugin_dir_path( __FILE__ ). '/languages');
 
 	$block_path = '/callout-block.js';
 	wp_register_script(

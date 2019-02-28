@@ -5,7 +5,7 @@ const { registerBlockType } = wp.blocks;
 
 import "./style.css";
 
-wp.blocks.registerBlockType("jsforwp/callout-block", {
+registerBlockType("jsforwp/callout-block", {
   title: "Callout Block",
 
   icon: "megaphone",

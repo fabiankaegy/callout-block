@@ -90,7 +90,7 @@ var registerBlockType = wp.blocks.registerBlockType;
 
 
 
-wp.blocks.registerBlockType("jsforwp/callout-block", {
+registerBlockType("jsforwp/callout-block", {
   title: "Callout Block",
 
   icon: "megaphone",

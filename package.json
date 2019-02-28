@@ -12,7 +12,7 @@
     "url": "git+https://fabiankaegy@github.com/fabiankaegy/callout-block.git"
   },
   "author": "fabiankaegy & zgordon",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/fabiankaegy/callout-block/issues"
   },

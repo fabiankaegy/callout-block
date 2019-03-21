@@ -1,0 +1,14 @@
+{
+  "name": "callout-block",
+  "version": "1.0.0",
+  "main": "src/callout-block.js",
+  "scripts": {
+    "build": "wp-scripts run build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/eslint-plugin": "^2.1.0",
+    "@wordpress/scripts": "^3.1.0",
+    "prettier-eslint": "^8.8.2"
+  }
+}

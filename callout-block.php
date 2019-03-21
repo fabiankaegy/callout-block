@@ -12,7 +12,7 @@ add_action('init', 'jsforwp_register_block_assets');
 
 function jsforwp_register_block_assets() {
 
-	$block_path = '/callout-block.js';
+	$block_path = '/build/index.js';
 	wp_register_script(
 		'jsforwp-callout-block',
 		plugins_url( $block_path , __FILE__ ),

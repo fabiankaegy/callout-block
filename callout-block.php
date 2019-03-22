@@ -5,7 +5,7 @@
  * Author: zgordon, fabiankaegy
  * Author URI: https://javascriptforwp.com
  * Text Domain: jsforwp
- * Version: 1.0.0
+ * Version: 1.1.0
  */
 
 add_action('init', 'jsforwp_register_block_assets');

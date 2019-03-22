@@ -7,8 +7,6 @@
     "start": "wp-scripts start"
   },
   "devDependencies": {
-    "@wordpress/eslint-plugin": "^2.1.0",
-    "@wordpress/scripts": "^3.1.0",
-    "prettier-eslint": "^8.8.2"
+    "@wordpress/scripts": "^3.1.0"
   }
 }

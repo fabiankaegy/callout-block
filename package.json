@@ -4,7 +4,7 @@
   "main": "src/callout-block.js",
   "scripts": {
     "build": "wp-scripts run build",
-    "start": "wp-scripts start --config webpack.config.js"
+    "start": "wp-scripts start"
   },
   "devDependencies": {
     "@wordpress/scripts": "^3.1.0",

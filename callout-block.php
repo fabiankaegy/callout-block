@@ -17,19 +17,28 @@ function jsforwp_register_block_assets() {
 		'jsforwp-callout-block',
 		plugins_url( $block_path , __FILE__ ),
 		[ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor' ],
-		filemtime( plugin_dir_path( $block_path , __FILE__ ) )
+		time()
 	);
 
-	$style_path = '/callout-block.css';
+	$style_path = '/build/style.css';
 	wp_register_style(
 		'jsforwp-callout-block-styles',
 		plugins_url( $style_path , __FILE__ ),
 		[],
-		filemtime( plugin_dir_path( $style_path , __FILE__ ) )
+		time()
+	);
+	
+	$style_path = '/build/editor.css';
+	wp_register_style(
+		'jsforwp-callout-editor-block-styles',
+		plugins_url( $style_path , __FILE__ ),
+		[],
+		time()
     );
     
     register_block_type( 'jsforwp/callout-block', array(
 		'editor_script' => 'jsforwp-callout-block',
+		'editor_style' => 'jsforwp-callout-editor-block-styles',
 		'style' => 'jsforwp-callout-block-styles',
 	) );
     

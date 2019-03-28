@@ -71,6 +71,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/blocks/callout/editor.scss":
+/*!****************************************!*\
+  !*** ./src/blocks/callout/editor.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./src/blocks/callout/index.js":
 /*!*************************************!*\
   !*** ./src/blocks/callout/index.js ***!
@@ -88,6 +99,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _wordpress_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/editor */ "@wordpress/editor");
 /* harmony import */ var _wordpress_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_editor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/callout/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./editor.scss */ "./src/blocks/callout/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_editor_scss__WEBPACK_IMPORTED_MODULE_5__);
 
 
 /**
@@ -97,22 +112,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('jsforwp/callout-block', {
-  title: 'Callout Block',
-  icon: 'megaphone',
-  category: 'common',
+/**
+ * Internal dependencies
+ */
+
+
+
+Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])("jsforwp/callout-block", {
+  title: "Callout Block",
+  icon: "megaphone",
+  category: "common",
   attributes: {
     content: {
-      source: 'html',
-      selector: 'h2'
+      source: "html",
+      selector: "h2"
     },
     backgroundColor: {
-      type: 'string',
-      default: '#900900'
+      type: "string",
+      default: "#900900"
     },
     textColor: {
-      type: 'string',
-      default: '#ffffff'
+      type: "string",
+      default: "#ffffff"
     }
   },
   edit: function edit(props) {
@@ -123,9 +144,9 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('jsf
         setAttributes = props.setAttributes,
         className = props.className;
     return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_editor__WEBPACK_IMPORTED_MODULE_3__["InspectorControls"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_editor__WEBPACK_IMPORTED_MODULE_3__["PanelColorSettings"], {
-      title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Color Settings', 'jsforwp'),
+      title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Color Settings", "jsforwp"),
       colorSettings: [{
-        label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Background Color', 'jsforwp'),
+        label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Background Color", "jsforwp"),
         value: backgroundColor,
         onChange: function onChange(newBackgroundColor) {
           setAttributes({
@@ -133,7 +154,7 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('jsf
           });
         }
       }, {
-        label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])('Text Color', 'jsforwp'),
+        label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Text Color", "jsforwp"),
         value: textColor,
         onChange: function onChange(newColor) {
           setAttributes({
@@ -173,6 +194,17 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('jsf
     });
   }
 });
+
+/***/ }),
+
+/***/ "./src/blocks/callout/style.scss":
+/*!***************************************!*\
+  !*** ./src/blocks/callout/style.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 

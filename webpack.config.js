@@ -1,19 +1,6 @@
 const webpack = require("webpack");
 const defaultConfig = require("./node_modules/@wordpress/scripts/config/webpack.config");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
-const editBlocksCSSPlugin = new ExtractTextPlugin({
-  filename: "./editor.css"
-});
-
-const blocksCSSPlugin = new ExtractTextPlugin({
-  filename: "./style.css"
-});
-
-const extractConfig = {
-  fallback: "style-loader",
-  use: ["css-loader", "sass-loader"]
-};
+const postcssPresetEnv = require("postcss-preset-env");
 
 module.exports = {
   ...defaultConfig,
@@ -22,14 +9,33 @@ module.exports = {
     rules: [
       ...defaultConfig.module.rules,
       {
-        test: /style\.scss$/,
-        use: blocksCSSPlugin.extract(extractConfig)
-      },
-      {
-        test: /editor\.scss$/,
-        use: editBlocksCSSPlugin.extract(extractConfig)
+        test: /\.scss$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].css"
+            }
+          },
+          {
+            loader: "extract-loader"
+          },
+          {
+            loader: "css-loader"
+          },
+          {
+            loader: "sass-loader"
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              ident: "postcss",
+              plugins: () => [postcssPresetEnv(/* pluginOptions */)]
+            }
+          }
+        ]
       }
     ]
   },
-  plugins: [...defaultConfig.plugins, blocksCSSPlugin, editBlocksCSSPlugin]
+  plugins: [...defaultConfig.plugins]
 };

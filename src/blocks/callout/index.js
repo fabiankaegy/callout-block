@@ -15,6 +15,7 @@ import {
  */
 import "./style.scss";
 import "./editor.scss";
+import "./theme.scss";
 
 registerBlockType("jsforwp/callout-block", {
   title: "Callout Block",

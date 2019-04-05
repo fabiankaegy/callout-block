@@ -103,8 +103,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./editor.scss */ "./src/blocks/callout/editor.scss");
 /* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_editor_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _theme_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./theme.scss */ "./src/blocks/callout/theme.scss");
-/* harmony import */ var _theme_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_theme_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _theme_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./theme.css */ "./src/blocks/callout/theme.css");
+/* harmony import */ var _theme_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_theme_css__WEBPACK_IMPORTED_MODULE_6__);
 
 
 /**
@@ -211,10 +211,10 @@ module.exports = __webpack_require__.p + "style.css";
 
 /***/ }),
 
-/***/ "./src/blocks/callout/theme.scss":
-/*!***************************************!*\
-  !*** ./src/blocks/callout/theme.scss ***!
-  \***************************************/
+/***/ "./src/blocks/callout/theme.css":
+/*!**************************************!*\
+  !*** ./src/blocks/callout/theme.css ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

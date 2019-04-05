@@ -9,7 +9,7 @@ module.exports = {
     rules: [
       ...defaultConfig.module.rules,
       {
-        test: /\.scss$/,
+        test: /\.(sc|sa|c)ss$/,
         use: [
           {
             loader: "file-loader",
